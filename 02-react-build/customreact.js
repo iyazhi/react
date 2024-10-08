@@ -22,7 +22,7 @@ function createElement(renderElement,root){
     const element = document.createElement('a',renderElement.type);
     element.innerHTML = renderElement.child;
     for (const prop in renderElement.props) {
-        if (prop === 'children') continue;
+        //if (prop == 'children') continue;
             element.setAttribute('prop',renderElement.props[prop]);   
         }
     root.appendChild(element);
